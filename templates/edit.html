@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+
+
+{% block content %}
+<h4>Edit Page</h4>
+    <form action="">
+        {% csrf_token %}
+
+        {{form.as_p}}
+        <button type="edit">Edit</button>
+    </form>
+{% endblock %}
+    

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+{% if user.is_authenticated  %}
+welcome {{ user.username }}
+<p>Email: {{ user.email }}</p>
+{% else %}
+
+
+Please Login
+{% endif %}
+
+{% endblock %}
